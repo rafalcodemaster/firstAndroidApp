@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QubApp</string>
+    <string name="enter_login" />
+    <string name="enter_password" />
+    <string name="confirm" />
+    <string name="enter_login2">Enter Login here</string>
+    <string name="enter_password2">Enter Password here</string>
+    <string name="textview">Attempts Left:</string>
+    <string name="confirm2">Confirm</string>
+    <string name="image" />
+</resources>
