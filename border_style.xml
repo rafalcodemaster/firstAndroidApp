@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- This xml class determines the frame which surrounds the counter display
+-->
+
+    <!-- set the width to 2dp and color to red by calling below methods -->
+    <stroke
+        android:width="2dp"
+        android:color="#c11f1f" />
+
+    <!--set the corner to the squared ones, or the right angles in the other words -->
+    <corners android:radius="0dp" />
+
+    <!-- padding set to 5dp across all 4 sides of the frame -->
+    <padding
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp" />
+
+</shape>
