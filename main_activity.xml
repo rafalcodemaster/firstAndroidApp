@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--The main work background of QUBapp replies on the Linear layout with the set android:orientation to "vertical", and
+layout_height and layout_weight set to match the display, line android:gravity="center" was used to place all the widgets in the centre of the app by default -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context="com.example.eryk.qubapp.MainActivity">
+
+    <!--The top image view displayes the logo sources from the drawable res folder in line android:scrCompat="drawable/qubred",
+     the layout_width="305dp" and layout_height="305dp" are set to fit the app and not take too much of the screen, also
+      line layout_gravity="center" determines the positioning of the logotype on the center of the display screen-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="141dp"
+        android:layout_gravity="center"
+        android:contentDescription="qub logo"
+        app:srcCompat="@drawable/qubred" />
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_weight="0.13"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--Assign an android id to the counter textview by xml android:id="@+id/Counter", Assignt the border to the
+         textview from a drawbable resource via xml android:background ="drawable/border_style"-->
+        <TextView
+
+            android:id="@+id/Counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:text="@string/textview"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    </LinearLayout>
+
+    <!--Assign an android id to the counter EditText by xml android:id="@+id/Login", setting of the colour of the underline to red by
+     android:backgorundTint="c11f1f", the hint message of what to eneter is reference to a string resource by xml line android:hint=@string/enter_login2, , android:maxLength="15"
+     sets 15 characters input max and xml code android:singleLine="true" sets the input to maximum 1 line -->
+
+    <EditText
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#c11f1f"
+        android:ems="10"
+        android:hint="@string/enter_login2"
+        android:singleLine="true"
+        android:password="true"
+        android:maxLength="15"/>
+
+    <!--Assign an android id to the counter EditText by xml android:id="@+id/password", setting of the colour of the underline to red by
+     android:backgorundTint="c11f1f", the hint message of what to eneter is reference to a string resource by xml line android:hint=@string/enter_password2, , android:maxLength="15"
+     sets 15 characters input max and xml code android:singleLine="true" sets the input to maximum 1 line -->
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#c11f1f"
+        android:ems="10"
+        android:hint="@string/enter_password2"
+        android:inputType=""
+        android:singleLine="true"
+        android:password="true"
+         android:maxLength="15"/>
+
+    <!-- Assign an android id to the counter Button widget by xml android:id="@+id/ConfirmButton", the width and height are both to set "wrap_content"
+    to keep the button at the optimize size adjusted to the android:text"@string/confirm2" content.-->
+    <Button
+        android:id="@+id/ConfirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm2" />
+
+
+</LinearLayout>
