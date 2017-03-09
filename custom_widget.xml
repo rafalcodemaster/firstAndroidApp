@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Calling  the linear layout as the background workspace for the toast
+ environment with height and width set to stretch
+ to parent dimensions, background is set to red, the padding is at 5dp -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toast_layout_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#8B0000"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="1">
+
+    <!-- widget with textview to set the text which has a widght to match the content only and height to match the parent
+     the text color is set to #FFF-->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textColor="#FFF" />
+
+    <!--widget with the imported drawable icon of the qub university
+    with width and height set to following values : 62 width and 48 dp height each -->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/qubiconfinal" />
+
+
+</LinearLayout>
